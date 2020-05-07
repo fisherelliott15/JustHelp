@@ -1,0 +1,276 @@
+
+body{
+  max-width: 1024px;
+  max-height: 768px;
+}
+html,body,
+header,
+#intro{
+  height: 100%;
+
+}
+#intro{
+  background-color: #05668D;
+}
+.p {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 13px;
+}
+.smalltitle-container{
+  max-height: 150px;
+}
+
+.col-md-12 {
+  color: #E4FDE1;
+  text-align: left;
+  font-family: barlow;
+  padding-left: 77px !important;
+  padding-bottom: 20px !important;
+  font-size: 20px;
+  font-style:  Condensed Thin;
+}
+.col-md-12 hr{
+  background: #E4FDE1;
+  position: relative;
+  width: 200px;
+  align-self: flex-start;
+  margin: 5px;
+}
+.col-title img{
+  max-height: 145px;
+  max-width: auto;
+}
+.header-content sub{
+  color:white;
+  align-items: flex-start;
+  color: #E4FDE1;
+  text-align: left;
+  font-family: barlow;
+  font-style:  Condensed Thin;
+}
+.header-content img{
+  padding-top: 100px;
+}
+.row .col-buttons{
+  padding-left: 50px;
+
+}
+.container-buttons .leftbtn{
+  font-family: barlow;
+  font-style: condensed;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 42px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #A5BE00;
+  height: 81px;
+  width: 350px;
+  margin-top: 80px;
+
+
+}
+.container-buttons .rightbtn{
+  font-family: barlow;
+  font-style: condensed;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 42px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #F45B69;
+  height: 81px;
+  width: 251px;
+  margin-top: 80px;
+}
+.col-2{
+  height: 100px;
+}
+.carousel-inner{
+  max-height: 480px;
+}
+
+.container-fluid p,h3{
+  font-family: barlow;
+  font-style:  Condensed Thin;
+  color: #E4FDE1;
+  padding-left: 79px;
+  padding-right: 79px;
+  font-size: 30px;
+  text-align:left;
+
+
+}
+.col-carousel{
+  background-image: contain;
+}
+.carousel-inner{
+  width: 480px;
+  height: 480px;
+}
+.col-footer{
+  max-width: 700px;
+}
+body {
+  opacity: 1;
+  transition: 1.5s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+.footer-container p{
+  font-weight: bold;
+  font-family: Barlow;
+  font-style: semi condensed;
+  font-size: 27px;
+  text-align: center;
+
+}
+.col-hero{
+  max-height: 318px;
+  max-width: auto;
+
+}
+.col-hero img{
+  max-height: 233px;
+  max-width: auto;
+
+}
+.col-quote{
+  height: 162;
+  width: auto;
+}
+.col-quote p2{
+  font-size: 27px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: barlow;
+  font-style:  italic;
+
+}
+.col-quote p{
+  font-size: 27px;
+  text-align: center;
+  font-family: barlow;
+  font-weight: bold;
+  margin: 0;
+
+}
+.col-progbar .progress-bar{
+  background-color: #05668D;
+  width: 350px;
+  border: 50px;
+  height: 80px;
+  border-color: black;
+
+}
+.col-progbar .progress{
+  background-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 80px;
+  width: 350;
+  border: black solid;
+  border-radius: 1px;
+  border-width: 5px;
+}
+.col-progbar{
+  width: 350px;
+}
+.col-spacer{
+  height: 5px;
+}
+.col align-self-center{
+  width:238px;
+}
+.container-span{
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.modal-dialog{
+  background-color: none;
+}
+.modal-content{
+  border: none;
+  border: #F45B69;
+}
+.modal-content .modal-header{
+  font-family: barlow;
+  font-weight: bold;
+  background-color: #F45B69;
+  border-color: #F45B69;
+  color: white;
+  border-radius: none;
+}
+.modal-content .modal-body{
+  font-family: barlow;
+  font-weight: bold;
+  color: white;
+  background-color: #F45B69;
+  border: none;
+}
+.modal-content .modal-footer{
+  font-family: barlow;
+  font-weight: bold;
+  background-color: #F45B69;
+  color: white;
+  border: none;
+}
+#exampleModalLong{
+  background-color: 0,0,0 .05;
+  border-radius: 1px;
+  border-color: white;
+
+}
+.modal-content .btn-confirmcall{
+  color: red;
+  background-color: white;
+  border: solid red;
+  width: 174px;
+  height: 52px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: barlow;
+  font-style: condensed;
+}
+.modal-content .btn-cancelcall{
+  color: white;
+  background-color: black;
+  border: solid white;
+  width: 139px;
+  height: 52px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: barlow;
+  font-style: condensed;
+}
+.modal-header .modal-title{
+  font-size: 48px;
+  font-weight: bold;
+  font-family: barlow;
+  font-style: semi-condensed;
+  align-items: flex-end;
+  position: relative;
+  padding-left: 119px;
+}
+.modal-body p{
+  font-size: 20px;
+  font-weight: medium;
+  font-family: barlow;
+  font-style: condensed;
+  width: 343px;
+  float: right;
+  height: auto;
+}
+.modal-body img{
+  width: 102px;
+  height: 110px;
+}
