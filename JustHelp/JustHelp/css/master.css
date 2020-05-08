@@ -12,6 +12,10 @@ header,
 #intro{
   background-color: #05668D;
 }
+#emergency{
+  height: 100%;
+  background-color:#F45B69;
+}
 .p {
   text-align: center;
   padding-top: 40px;
@@ -37,9 +41,22 @@ header,
   align-self: flex-start;
   margin: 5px;
 }
-.col-title img{
+.col-title h1{
   max-height: 145px;
   max-width: auto;
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-style: bold condensed;
+  align-items: center;
+}
+.col-title em{
+    text-align: center;
+    font-size: 59px;
+    font-family: barlow;
+    font-style: italic condensed;
+    font-weight: lighter;
+    align-items: center;
 }
 .header-content sub{
   color:white;
@@ -52,11 +69,8 @@ header,
 .header-content img{
   padding-top: 100px;
 }
-.row .col-buttons{
-  padding-left: 50px;
 
-}
-.container-buttons .leftbtn{
+.leftbtn{
   font-family: barlow;
   font-style: condensed;
   font-weight: bold;
@@ -68,12 +82,14 @@ header,
   border-width: 5px;
   background-color: #A5BE00;
   height: 81px;
-  width: 350px;
+  width: 208px;
   margin-top: 80px;
+  padding: none;
+
 
 
 }
-.container-buttons .rightbtn{
+ .rightbtn{
   font-family: barlow;
   font-style: condensed;
   font-weight: bold;
@@ -87,6 +103,8 @@ header,
   height: 81px;
   width: 251px;
   margin-top: 80px;
+  padding: none;
+
 }
 .col-2{
   height: 100px;
@@ -122,8 +140,10 @@ body {
 }
 
 body.fade {
-    opacity: 0;
-    transition: none;
+    opacity: 0.5;
+    transition: ease-in-out;
+    transition-duration: 400;
+
 }
 .footer-container p{
   font-weight: bold;
@@ -131,28 +151,43 @@ body.fade {
   font-style: semi condensed;
   font-size: 27px;
   text-align: center;
+  color: black
 
 }
-.col-hero{
+.col-hero {
   max-height: 318px;
   max-width: auto;
 
 }
-.col-hero img{
-  max-height: 233px;
-  max-width: auto;
-
+.col-hero h1{
+  text-align: center;
+  font-size: 130px;
+  font-family: barlow;
+  font-style: bold condensed;
+  align-items: center;
+}
+.col-hero em{
+  text-align: center;
+  font-size: 130px;
+  font-family: barlow;
+  font-style: italic condensed;
+  font-weight: lighter;
+  align-items: center;
+}
+.col-hero{
+  margin-top: 181px;
 }
 .col-quote{
   height: 162;
   width: auto;
 }
-.col-quote p2{
+.col-quote {
   font-size: 27px;
   margin-bottom: 50px;
   text-align: center;
   font-family: barlow;
-  font-style:  italic;
+  font-style:  condensed italic;
+  color: black;
 
 }
 .col-quote p{
@@ -160,6 +195,7 @@ body.fade {
   text-align: center;
   font-family: barlow;
   font-weight: bold;
+  color: black;
   margin: 0;
 
 }
@@ -259,6 +295,7 @@ body.fade {
   font-style: semi-condensed;
   align-items: flex-end;
   position: relative;
+  color: #EBF2FA;
   padding-left: 119px;
 }
 .modal-body p{
@@ -266,6 +303,7 @@ body.fade {
   font-weight: medium;
   font-family: barlow;
   font-style: condensed;
+  color: #EBF2FA;
   width: 343px;
   float: right;
   height: auto;
@@ -273,4 +311,176 @@ body.fade {
 .modal-body img{
   width: 102px;
   height: 110px;
+}
+.top-logo h1{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-style: bold condensed;
+  color: #EBF2FA;
+  align-items: center;
+}
+.top-logo em{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-style: italic condensed;
+  font-weight: lighter;
+  color: #EBF2FA;
+  align-items: center;
+}
+.top-logo-gr h1{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-style: bold condensed;
+  color: #E4FDE1;
+  align-items: center;
+}
+.top-logo-gr em{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-style: italic condensed;
+  font-weight: lighter;
+  color: .top-logo em{
+    text-align: center;
+    font-size: 59px;
+    font-family: barlow;
+    font-style: italic condensed;
+    font-weight: lighter;
+    color: #EBF2FA;
+    align-items: center;
+  };
+  align-items: center;
+}
+.callstatus h5{
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-family: barlow;
+  font-weight: lighter;
+  font-style: italic;
+}
+.subheader p{
+  font-size: 30px;
+  fon
+}
+.subheader dl{
+  font-size: 20px;
+  font-style: lighter;
+}
+.subheader dl,hr,p{
+  text-align: left;
+  color: #E4FDE1;
+  font-family: barlow;
+  font-style: condensed;
+}
+.subheader hr{
+  margin: 0 auto;
+  background-color: #E4FDE1;
+  font-size: 30px;
+}
+.subheader h3{
+  text-align: left;
+  color: #E4FDE1;
+  font-family: barlow;
+  font-style: condensed;
+  padding: 0;
+}
+#spinner-border {
+  border-color: white;
+  width: 136px;
+  height: 136px;
+
+}
+.emergency-message h4{
+  color: #EBF2FA;
+  font-family: barlow;
+  font-style: condensed italic;
+  font-size: 25px;
+  align-items: center;
+
+}
+.emergency-message h3{
+  color: #EBF2FA;
+  font-family: barlow;
+  font-style:bold italic;
+  font-size: 25px;
+}
+.emergency-message hr{
+  margin: 0 auto;
+  background-color: #EBF2FA;
+  width: 850px;
+  font-size: 30px;
+}
+.fivesteps h1{
+  color: #EBF2FA;
+  font-family: barlow;
+  font-style: condensed italic;
+  font-size: 30px;
+  text-align: center;
+}
+ .card-body p{
+  color: red;
+  font-family: barlow;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+
+}
+.card-body h5{
+ color: #F45B69;
+ font-family: barlow;
+ font-size: 20px;
+ text-align: left;
+ border: none;
+}
+.card .card-body {
+  background-color: #EBF2FA;
+  padding: 5px;
+
+}
+.card{
+  padding: 5px;
+  background-color: #EBF2FA;
+
+}
+.step-cards .card {
+  width: 159px;
+  height: 350px;
+  padding: none;
+  background-color: #EBF2FA;
+}
+.card-img-top{
+  width: 159px;
+  height: 114px;
+  border: none;
+  background-color: #EBF2FA;
+}
+h5.card-title {
+  margin: 3px;
+
+}
+.microphone{
+  width: auto;
+  height: 119px;
+  margin-bottom: 10px;
+
+  -webkit-animation: pulse 1.5s infinite ease-in-out;
+    -o-animation: pulse 1.5s infinite ease-in-out;
+    -ms-animation: pulse 1.5s infinite ease-in-out;
+    -moz-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+.microphone-inactive{
+  width: auto;
+  height: 119px;
+  margin-bottom: 10px;
+  opacity: .3;
 }

@@ -21,33 +21,37 @@
 </script>
 <!-- intro content -->
 
-  <div id="intro" class="view">
-
-      <div class="header-content">
-
-          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
-              <div class="row d-flex justify-content-center text-center">
-                  <img src="images/Justhelp(smalllogo).png" alt="JustHelp">
-                  <div class="col-md-12">
-                    <sub>Your journey starts here. </sub>
-                    <hr class="hr-light">
-                  </div>
-                  <p> No matter your situation, you can always make it better. But there's no reason to do it alone. With this service you can find addiction support for you or a loved one. At JustHelp stations you can find information on needle exchanges, free or reduced price addiction support, rehabilitation clinics, shelters, and vital information from fellow addicts and users.  </p>
-                  <h3>If you need help immediately and cannot reach a phone press "Emergency" below have call emergency services through our tablet.</h3>
+<div id="intro" class="view">
+    <div class="container">
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <div class="top-logo-gr">
+                <h1>Just<em>Help.</em></h1>
               </div>
+            </div>
           </div>
-
-      </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="subheader">
+                <dl>Your Journey starts here...</dl>
+                <hr></hr>
+                <p>No matter your situation, you can always make it better. But there's no reason to do it alone. With this service you can find addiction support for you or a loved one. At JustHelp stations you can find information on needle exchanges, free or reduced price addiction support, rehabilitation clinics, shelters, and vital information from fellow addicts and users. </p>
+                <h3>If you need help immediately and cannot reach a phone press "Call 911" below have emergency services sent.</h3>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
       <div class="container-buttons">
         <div class="row justify-content-between">
-          <div class="col-buttons col-4">
-            <button type="button" class="leftbtn">I'm ok to continue</button>
+          <div class="col-6" align="center">
+            <button type="button" class="leftbtn" onclick='window.location.href="chooseuser.html"'>continue</button>
           </div>
-          <div class="col-buttons col-4">
-            <button type="button" class="rightbtn"data-toggle="modal" data-target="#exampleModalLong">Emergency</button>
+          <div class="col-6" align="center">
+            <button type="button" class="rightbtn" data-toggle="modal" data-target="#exampleModalLong"'>emergency</button>
           </div>
-          </div>
+        </div>
       </div>
 
       </div>
@@ -68,7 +72,7 @@
         <p>Authorities will be contacted to send police and paramedics to this location. When the microphone icon appears you can speak directly with dispatchers.</p>
       </div>
       <div class="modal-footer">
-      <button type="button" class="btn-confirmcall">confirm call</button>
+      <button type="button" class="btn-confirmcall" onclick='window.location.href="emergency.html"'>confirm call</button>
       <button type="button" class="btn-cancelcall"data-dismiss="modal">cancel</button>
       </div>
     </div>
