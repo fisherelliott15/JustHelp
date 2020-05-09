@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <title>introscreen</title>
   <link rel="stylesheet" href="css/master.css">
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 
 </head>
 
@@ -22,43 +19,31 @@
 <!-- intro content -->
 
 <div id="intro" class="view">
-    <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-4">
-              <div class="top-logo-gr">
-                <h1>Just<em>Help.</em></h1>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-10">
-              <div class="question-intro">
-                <h2>First, who is this addiction support for?</h2>
-              </div>
-            </div>
-          </div>
-    </div>
-      <div class="container-buttons">
-        <div class="row justify-content-between">
-          <div class="col-6" align="center">
-            <button type="button" class="leftbtn" onclick='window.location.href="intro-addict.html"'>for me</button>
-          </div>
-          <div class="col-6" align="center">
-            <button type="button" class="altbtn-LG"  onclick='window.location.href="intro-LovedOne.html"'>for someone else</button>
-          </div>
-        </div>
-      </div>
-
+  <div id="surveyContainer"></div>
       </div>
   <!-- Bootstrap core JavaScript -->
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://surveyjs.azureedge.net/1.7.5/survey.jquery.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function(e) {
     document.body.className = '';
   });
+  Survey.StylesManager.applyTheme("bootstrap");
+
+var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"boolean","name":"Are you 18 or older?","isRequired":true,"labelTrue":"Yes","labelFalse":"No"}],"title":"Are you 18 or older"},{"name":"page2","elements":[{"type":"matrix","name":"question2","isRequired":true,"columns":["Column 1"],"rows":["Male","Female","Prefer not to answer"]}],"title":"Do you identify as male or female?"},{"name":"page3","elements":[{"type":"matrix","name":"question3","title":"Are you currently using or addicted to Opioids (Heroin, Phentynol, Oxycontin, etc.)","columns":["Column 1"],"rows":["Yes","No","Prefer not to answer"]}]}]}
+
+function sendDataToServer(survey) {
+    alert("The results are:" + JSON.stringify(survey.data));
+}
+
+var survey = new Survey.Model(surveyJSON);
+$("#surveyContainer").Survey({
+    model: survey,
+    onComplete: sendDataToServer
+});
 </script>
 <script>
 

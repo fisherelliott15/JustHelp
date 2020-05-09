@@ -23,6 +23,14 @@ header,
   height: 100%;
   background-color:#F45B69;
 }
+#LovedOne{
+  background-color: #EBF2FA;
+  height: 100%;
+}
+#Addict{
+  height: 100%;
+  background-color:#E4FDE1;
+}
 .p {
   text-align: center;
   padding-top: 40px;
@@ -587,3 +595,37 @@ h5.card-title {
     };
     align-items: center;
   }
+  .subheader-db p{
+    font-size: 30px;
+    color:#05668D;
+    margin-top: 29px;
+
+
+  }
+  .subheader-db h3{
+    font-size: 30px;
+    text-align: center;
+    color:#05668D;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: barlow;
+  }
+  .subheader-db em{
+    font-weight:  lighter;
+    font-style: italic;
+    font-family: barlow;
+
+  }
+#intro-loved-one-pics img{
+  height: 239px;
+  align-items: center;
+  width: auto;
+}
+#intro-addict-pic img{
+  align-items:center;
+  height:230px;
+  width:530px;
+
+}
+/* -----------------------questionnaire styles */
