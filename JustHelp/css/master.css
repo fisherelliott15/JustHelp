@@ -2,11 +2,12 @@
 body{
   max-width: 1024px;
   max-height: 768px;
+  margin: 0;
 }
 html,body,
-header,
 #intro{
   height: 100%;
+
 
 }
 #intro{
@@ -26,6 +27,8 @@ header,
 #LovedOne{
   background-color: #EBF2FA;
   height: 100%;
+  background-position: top;
+
 }
 #Addict{
   height: 100%;
@@ -145,7 +148,7 @@ header,
   max-height: 480px;
 }
 
-.container-fluid p,h3{
+/* .container-fluid p,h3{
   font-family: barlow;
   font-style:  Condensed Thin;
   color: #E4FDE1;
@@ -155,7 +158,7 @@ header,
   text-align:left;
 
 
-}
+} */
 .col-carousel{
   background-image: contain;
 }
@@ -629,3 +632,31 @@ h5.card-title {
 
 }
 /* -----------------------questionnaire styles */
+
+.questionnaire h3{
+  color: #05668D;
+  font-family: barlow;
+  font-size: 45px;
+  align-items: center;
+  text-align: center;
+}
+
+.q1{
+  display:block;
+}
+.q2{
+  display: none;
+}
+.q3{
+  display: none;
+}
+.q4{
+  display: none;
+}
+.q5{
+  display: none;
+}
+
+.end{
+  display: none;
+}
