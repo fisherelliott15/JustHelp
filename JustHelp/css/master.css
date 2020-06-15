@@ -3,6 +3,7 @@ body{
   max-width: 1024px;
   max-height: 768px;
   margin: 0;
+
 }
 html,body,
 #intro{
@@ -26,13 +27,31 @@ html,body,
 }
 #LovedOne{
   background-color: #EBF2FA;
-  height: 100%;
-  background-position: top;
+  height: 768px;
+  width: 1024px;
+  position: absolute;
 
 }
+
 #Addict{
-  height: 100%;
   background-color:#E4FDE1;
+  height: 768px;
+  width: 1024px;
+  position: absolute;
+}
+#POA{
+  background-color:#05668D;
+  height: 768px;
+  width: 1024px;
+  position: absolute;
+}
+#Goodbye{
+  background-image: url("images/goodbye.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 768px;
+  width: 1024px;
+  position: absolute;
 }
 .p {
   text-align: center;
@@ -50,7 +69,7 @@ html,body,
   padding-left: 77px !important;
   padding-bottom: 20px !important;
   font-size: 20px;
-  font-style:  Condensed Thin;
+  font-weight:  lighter;
 }
 .col-md-12 hr{
   background: #E4FDE1;
@@ -65,24 +84,25 @@ html,body,
   text-align: center;
   font-size: 59px;
   font-family: barlow;
-  font-style: bold condensed;
+  font-weight: bold;
   align-items: center;
 }
 .col-title em{
     text-align: center;
     font-size: 59px;
     font-family: barlow;
-    font-style: italic condensed;
+    font-style: italic ;
     font-weight: lighter;
     align-items: center;
 }
+
 .header-content sub{
   color:white;
   align-items: flex-start;
   color: #E4FDE1;
   text-align: left;
   font-family: barlow;
-  font-style:  Condensed Thin;
+  font-style:  Thin;
 }
 .header-content img{
   padding-top: 100px;
@@ -90,7 +110,6 @@ html,body,
 
 .leftbtn{
   font-family: barlow;
-  font-style: condensed;
   font-weight: bold;
   line-height: 1;
   font-size: 42px;
@@ -101,7 +120,7 @@ html,body,
   background-color: #A5BE00;
   height: 81px;
   width: 208px;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: none;
 
 
@@ -109,7 +128,6 @@ html,body,
 }
  .rightbtn{
   font-family: barlow;
-  font-style: condensed;
   font-weight: bold;
   line-height: 1;
   font-size: 42px;
@@ -120,25 +138,57 @@ html,body,
   background-color: #F45B69;
   height: 81px;
   width: 251px;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: none;
+
+}
+.printclosebtn .btn{
+  font-family: barlow;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 27px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #A5BE00;
+  height: 81px;
+  width: 208px;
+  float: right;
+
+}
+.closebtn .btn{
+  font-family: barlow;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 40px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #F45B69;
+  height: 81px;
+  width: 208px;
 
 }
 .altbtn-LG{
   font-family: barlow;
-  font-style: condensed;
   font-weight: bold;
   border-radius: 1px;
   border: #EBF2FA solid;
   border-width: 5px;
   height: 81px;
   width: 317px;
-  margin-top: 80px;
+  margin-top: 40px;
   border-color: #E4FDE1;
   background: none;
   color: #E4FDE1;
-  font-size: 42px;
+  font-size: 35px;
 
+
+
+}
+.POA-buttons{
 
 }
 .col-2{
@@ -148,17 +198,6 @@ html,body,
   max-height: 480px;
 }
 
-/* .container-fluid p,h3{
-  font-family: barlow;
-  font-style:  Condensed Thin;
-  color: #E4FDE1;
-  padding-left: 79px;
-  padding-right: 79px;
-  font-size: 30px;
-  text-align:left;
-
-
-} */
 .col-carousel{
   background-image: contain;
 }
@@ -183,7 +222,6 @@ body.fade {
 .footer-container p{
   font-weight: bold;
   font-family: Barlow;
-  font-style: semi condensed;
   font-size: 27px;
   text-align: center;
   color: black
@@ -198,14 +236,14 @@ body.fade {
   text-align: center;
   font-size: 130px;
   font-family: barlow;
-  font-style: bold condensed;
+  font-weight: bold;
   align-items: center;
 }
 .col-hero em{
   text-align: center;
   font-size: 130px;
   font-family: barlow;
-  font-style: italic condensed;
+  font-style: italic ;
   font-weight: lighter;
   align-items: center;
 }
@@ -221,7 +259,7 @@ body.fade {
   margin-bottom: 50px;
   text-align: center;
   font-family: barlow;
-  font-style:  condensed italic;
+  font-style:   italic;
   color: black;
 
 }
@@ -266,8 +304,66 @@ body.fade {
   height: 100%;
   width: 100%;
 }
+.modal-title2 h1{
+  color: white;
+  text-align: left;
+}
+.modal-header2{
+  text-align: center;
+  font-size: 50px;
+  font-family: barlow;
+  font-weight: lighter;
+  font-style: italic;
+  color: #EBF2FA;
+  align-items: left;
+  color: #EBF2FA;
+}
+.modal-header2 p{
+  color: #EBF2FA;
+}
+.modal-header2 .close{
+  color: #EBF2FA;
+  opacity: 1;
+  font-size: 60px;
+  margin-right: 10px;
+}
+.modal-header2 em{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  color: #EBF2FA;
+  font-weight: bold;
+  color: black;
+  align-items: left;
+}
+.modal-title2 h1{
+  color: black;
+  text-align: left;
+}
+.modal-content2{
+  background-color: #A5BE00;
+}
+.modal-content2 .modal-body2 p{
+  color:#EBF2FA;
+  padding:50px;
+  font-size: 20px;
+}
+.modal-body2 img{
+  max-width: 238px;
+  max-height: 135px;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 120px;
+}
+.modal-dialog
+ .modal-POA .modal-content{
+  border: #A5BE00;
+  background-color: #A5BE00;
+
+}
 .modal-dialog{
   background-color: none;
+  padding: 10px;
 }
 .modal-content{
   border: none;
@@ -310,7 +406,6 @@ body.fade {
   font-size: 30px;
   font-weight: bold;
   font-family: barlow;
-  font-style: condensed;
 }
 .modal-content .btn-cancelcall{
   color: white;
@@ -321,13 +416,11 @@ body.fade {
   font-size: 30px;
   font-weight: bold;
   font-family: barlow;
-  font-style: condensed;
 }
 .modal-header .modal-title{
   font-size: 48px;
   font-weight: bold;
   font-family: barlow;
-  font-style: semi-condensed;
   align-items: flex-end;
   position: relative;
   color: #EBF2FA;
@@ -337,7 +430,6 @@ body.fade {
   font-size: 20px;
   font-weight: medium;
   font-family: barlow;
-  font-style: condensed;
   color: #EBF2FA;
   width: 343px;
   float: right;
@@ -351,15 +443,15 @@ body.fade {
   text-align: center;
   font-size: 59px;
   font-family: barlow;
-  font-style: bold condensed;
-  color: #EBF2FA;
+  font-weight: bold;
+  color: black;
   align-items: center;
 }
 .top-logo em{
   text-align: center;
   font-size: 59px;
   font-family: barlow;
-  font-style: italic condensed;
+  font-style: italic;
   font-weight: lighter;
   color: #EBF2FA;
   align-items: center;
@@ -368,7 +460,7 @@ body.fade {
   text-align: center;
   font-size: 59px;
   font-family: barlow;
-  font-style: bold condensed;
+  font-weight: bold;
   color: #E4FDE1;
   align-items: center;
 }
@@ -376,13 +468,13 @@ body.fade {
   text-align: center;
   font-size: 59px;
   font-family: barlow;
-  font-style: italic condensed;
+  font-style: italic ;
   font-weight: lighter;
   color: .top-logo em{
     text-align: center;
     font-size: 59px;
     font-family: barlow;
-    font-style: italic condensed;
+    font-style: italic ;
     font-weight: lighter;
     color: #EBF2FA;
     align-items: center;
@@ -405,13 +497,13 @@ body.fade {
 }
 .subheader-intro dl{
   font-size: 20px;
-  font-style: lighter;
+  font-weight: lighter;
 }
 .subheader-intro dl,hr,p{
   text-align: left;
   color: #E4FDE1;
   font-family: barlow;
-  font-style: condensed;
+  font-style: ;
 }
 .subheader-intro hr{
   margin: 0 auto;
@@ -422,7 +514,6 @@ body.fade {
   text-align: left;
   color: #E4FDE1;
   font-family: barlow;
-  font-style: condensed;
   padding: 0;
 }
 #spinner-border {
@@ -434,7 +525,7 @@ body.fade {
 .emergency-message h4{
   color: #EBF2FA;
   font-family: barlow;
-  font-style: condensed italic;
+  font-style: italic;
   font-size: 25px;
   align-items: center;
 
@@ -442,8 +533,10 @@ body.fade {
 .emergency-message h3{
   color: #EBF2FA;
   font-family: barlow;
-  font-style:bold italic;
-  font-size: 25px;
+  font-style:italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 .emergency-message hr{
   margin: 0 auto;
@@ -454,9 +547,14 @@ body.fade {
 .fivesteps h1{
   color: #EBF2FA;
   font-family: barlow;
-  font-style: condensed italic;
-  font-size: 30px;
+  font-style: italic;
+  font-size: 25px;
   text-align: center;
+}
+.step-cards .card{
+  min-height: 357px;
+  border-radius: 1px;
+  padding: 0px;
 }
  .card-body p{
   color: black;
@@ -483,7 +581,7 @@ body.fade {
   background-color: #EBF2FA;
 
 }
-.step-cards .card {
+.-cards .card {
   width: 159px;
   height: 350px;
   padding: none;
@@ -553,13 +651,13 @@ h5.card-title {
 }
 .subheader-liability dl{
   font-size: 20px;
-  font-style: lighter;
+  font-weight: lighter;
 }
 .subheader-liability dl,hr,p{
   text-align: left;
   color: #05668D;
   font-family: barlow;
-  font-style: condensed;
+  font-style: ;
 }
 .subheader-liability hr{
   margin: 0 auto;
@@ -570,36 +668,90 @@ h5.card-title {
   text-align: left;
   color: #05668D;
   font-family: barlow;
-  font-style: condensed;
+  font-weight: bold;
   padding: 0;
+}
+.top-logo-dg h1{
+  text-align: center;
+  font-size: 59px;
+  font-family: barlow;
+  font-weight: bold;
+  color: #A5BE00;
+  align-items: center;
+}
+.top-logo-dg em{
+    text-align: center;
+    font-size: 59px;
+    font-family: barlow;
+    font-weight: lighter;
+    text-align: center;
+    color: #A5BE00;
+    align-items: center;
+}
+
 }
   .top-logo-db h1{
     text-align: center;
     font-size: 59px;
     font-family: barlow;
-    font-style: bold condensed;
+    font-weight: bold;
     color: #05668D;
     align-items: center;
   }
+
   .top-logo-db em{
     text-align: center;
+    color: #05668D;
     font-size: 59px;
     font-family: barlow;
-    font-style: italic condensed;
+    font-style: italic;
     font-weight: lighter;
-    color: .top-logo em{
+}
+.top-logo em{
       text-align: center;
       font-size: 59px;
       font-family: barlow;
-      font-style: italic condensed;
+      font-style: italic ;
       font-weight: lighter;
-      color: #05668D;
+      color:black;
       align-items: center;
-    };
-    align-items: center;
-  }
+    }
+.top-logo-POA h1{
+  font-family: barlow;
+  text-align: left;
+  align-items: center;
+  font-size: 59px;
+  font-weight: bold;
+  color: #EBF2FA;
+}
+.top-logo-POA em{
+  font-family: Barlow;
+  font-size: 59px;
+  text-align: left;
+  font-weight: lighter;
+  align-items: center;
+
+}
+.top-logo-POA h3{
+  font-family: barlow;
+  text-align: left;
+  align-items: center;
+  font-size: 25px;
+  color: #A5BE00;
+
+}
+.POA-include{
+  border: 5px solid;
+  color:white;
+  width: 292px;
+  height: 420px;
+  float: right;
+  margin-top: 40px;
+  margin-right: 50px;
+
+}
   .subheader-db p{
-    font-size: 30px;
+    font-size: 25px;
     color:#05668D;
     margin-top: 29px;
 
@@ -620,6 +772,28 @@ h5.card-title {
     font-family: barlow;
 
   }
+  .subheader-dg p{
+    font-size: 25px;
+    color:#A5BE00;
+    margin-top: 29px;
+
+
+  }
+  .subheader-dg h3{
+    font-size: 30px;
+    text-align: center;
+    color:#A5BE00;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: barlow;
+  }
+  .subheader-dg em{
+    font-weight:  lighter;
+    font-style: italic;
+    font-family: barlow;
+
+  }
 #intro-loved-one-pics img{
   height: 239px;
   align-items: center;
@@ -631,6 +805,75 @@ h5.card-title {
   width:530px;
 
 }
+#goodbyepic img{
+  height: 317px;
+  align-items: center;
+  width: auto;
+}
+.step-text p{
+  color: #EBF2FA;
+  font-family: barlow;
+  font-size: 19px;
+
+}
+.step-pic img{
+  height: 65px;
+  width: 70px;
+}
+.step-pic{
+  align-items:center;
+  height: 65px;
+  width: 70px;
+  margin-right: 0px;
+
+
+
+}
+.POA-include img{
+  border: 0px;
+  background-color: transparent;
+  max-width: 75px;
+  max-height: 75px;
+}
+.POA-include h5{
+  color: #EBF2FA;
+  align-items: right;
+  font-family: barlow;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+}
+div.include-title {
+  color: #EBF2FA;
+  font-size: 20px;
+  align-items: center;
+  align-self: flex-end;
+  font-family: barlow;
+  font-weight: normal;
+}
+.POA-include{
+  border-color:#EBF2FA;
+}
+.qr img{
+  max-height: 145px;
+  border: solid;
+  border-color: #A5BE00;
+
+}
+.qr{
+  max-height: 145px;
+  max-width: 145px;
+  float: right;
+  margin-top: 10px;
+  margin-right:50px;
+}
+.staystrong-text h4{
+  font-size: 30;
+  font-family: barlow;
+  font-weight: lighter;
+  font-style: italic;
+}
+/*
 /* -----------------------questionnaire styles */
 
 .questionnaire h3{
@@ -639,6 +882,58 @@ h5.card-title {
   font-size: 45px;
   align-items: center;
   text-align: center;
+}
+.questionnaireAddict h3{
+  color: #A5BE00;
+  font-family: barlow;
+  font-size: 45px;
+  align-items: center;
+  text-align: center;
+}
+
+.yesbtn{
+  font-family: barlow;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 42px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #A5BE00;
+  height: 81px;
+  width: 208px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.nobtn{
+  font-family: barlow;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 42px;
+  color: #EBF2FA;
+  border-radius: 1px;
+  border: #EBF2FA solid;
+  border-width: 5px;
+  background-color: #05668D;
+  height: 81px;
+  width: 208px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.skipbtn{
+  font-family: barlow;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 42px;
+  color: #05668D;
+  border-radius: 1px;
+  border: #05668D solid;
+  border-width: 5px;
+  background: transparent;
+  height: 81px;
+  width: auto;
+  margin-top: 50px;
 }
 
 .q1{
@@ -656,7 +951,127 @@ h5.card-title {
 .q5{
   display: none;
 }
+.q6{
+  display: none;
+}
+.q7{
+  display: none;
+}
+.q8{
+  display: none;
+}
+.q9{
+  display: none;
+}
+.q10{
+  display: none;
+}
+.q11{
+  display: none;
+}
+.q12{
+  display: none;
+}
+.q13{
+  display: none;
+}
+.q14{
+  display: none;
+}
+.q15{
+  display: none;
+}
+.q16{
+  display: none;
+}
+.q17{
+  display: none;
+}
+.q18{
+  display: none;
+}
+.q19{
+  display: none;
+}
+.q20{
+  display: none;
+}
 
 .end{
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.q1Addict{
+  display:block;
+}
+.q2Addict{
+  display: none;
+}
+.q3Addict{
+  display: none;
+}
+.q4Addict{
+  display: none;
+}
+.q5Addict{
+  display: none;
+}
+.q6Addict{
+  display: none;
+}
+.q7Addict{
+  display: none;
+}
+.q8Addict{
+  display: none;
+}
+.q9Addict{
+  display: none;
+}
+.q10Addict{
+  display: none;
+}
+.q11Addict{
+  display: none;
+}
+.q12Addict{
+  display: none;
+}
+.q13Addict{
+  display: none;
+}
+.q14Addict{
+  display: none;
+}
+.q15Addict{
+  display: none;
+}
+.q16Addict{
+  display: none;
+}
+.q17Addict{
+  display: none;
+}
+.q18Addict{
+  display: none;
+}
+.q19Addict{
+  display: none;
+}
+.q20Addict{
   display: none;
 }
